@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-
+import LetterGlitch from "@/components/LetterGlitch";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -31,8 +31,12 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+              <Avatar className="w-28 h-28 border hover:scale-105 transition-transform cursor-pointer rounded-full overflow-hidden">
+                <AvatarImage 
+                  alt={DATA.name} 
+                  src={DATA.avatarUrl} 
+                  className="w-full h-full object-cover"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -137,7 +141,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
                   key={project.title}
                   title={project.title}
                   description={project.description}
@@ -195,8 +198,8 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+      <section id="contact" className="relative">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 relative z-10">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
