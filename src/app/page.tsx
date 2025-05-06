@@ -9,9 +9,6 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import LetterGlitch from "@/components/LetterGlitch";
-import { IconCloud } from "@/components/magicui/icon-cloud";
-import { IconCloudDemo } from "@/components/magicui/icon-cloud-demo";
-import { Globe } from "@/components/magicui/globe";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
