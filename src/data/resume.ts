@@ -1,3 +1,5 @@
+import { Icons } from "@/components/icons"; // Import Icons
+
 export const DATA = {
   name: "papon",
   initials: "P",
@@ -45,11 +47,13 @@ export const DATA = {
       image: "/images/project-a.png",
       video: "/videos/project-a.mp4",
       links: [
-        { label: "GitHub", url: "https://github.com/project-a" },
-        { label: "Live Demo", url: "https://project-a.com" },
+        { icon: Icons.github({}), type: "GitHub", href: "https://github.com/project-a" }, // Updated structure
+        { icon: Icons.globe({}), type: "Live Demo", href: "https://project-a.com" }, // Updated structure
       ],
     },
     // ...other projects...
+    // Ensure all other projects' links follow the new structure:
+    // { icon: <SomeIconComponent />, type: "Link Type", href: "URL" }
   ],
   hackathons: [
     {
@@ -59,11 +63,13 @@ export const DATA = {
       dates: "Jan 2020",
       image: "/images/hackathon-a.png",
       links: [
-        { label: "GitHub", url: "https://github.com/hackathon-a" },
-        { label: "Live Demo", url: "https://hackathon-a.com" },
+        { icon: Icons.github({}), type: "GitHub", href: "https://github.com/hackathon-a" }, // Updated structure
+        { icon: Icons.globe({}), type: "Live Demo", href: "https://hackathon-a.com" }, // Updated structure
       ],
     },
     // ...other hackathons...
+    // Ensure all other hackathons' links follow the new structure:
+    // { icon: <SomeIconComponent />, type: "Link Type", href: "URL" }
   ],
   contact: {
     social: {
