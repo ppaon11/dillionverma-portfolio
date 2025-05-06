@@ -201,16 +201,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-
-        {/* <div className="absolute inset-0 z-0">
-          <LetterGlitch
-            glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
-            glitchSpeed={50}
-            centerVignette={true}
-            outerVignette={false}
-            smooth={true}
-          />
-        </div> */}
       <section id="contact" className="relative">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 relative z-10">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -236,22 +226,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-
-      {/* <section className="w-full py-12">
-        <div className="container mx-auto px-4">
-          <div className="h-[400px] w-full">
-            <IconCloudDemo />
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="w-full py-12 relative">
-        <div className="container mx-auto px-4">
-          <div className="h-[500px] w-full relative">
-            <Globe />
-          </div>
-        </div>
-      </section> */}
     </main>
   );
 }
