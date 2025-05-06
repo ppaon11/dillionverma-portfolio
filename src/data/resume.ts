@@ -7,6 +7,7 @@ export const DATA = {
     I am a full stack developer with a passion for building web applications.
     I have experience working with a variety of technologies, including React, Node.js, and GraphQL.
   `,
+  url: "https://your-website-url.com", // Add your website's base URL here
   work: [
     {
       company: "Company A",
